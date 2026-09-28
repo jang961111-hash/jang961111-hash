@@ -1,163 +1,81 @@
 <!-- Byeongheon Jang (장병헌) · github.com/jang961111-hash -->
-<!-- Hi, source reader. The README is the product — ship > ornament. -->
+<!-- 이 레포의 README는 광고가 아니라 근거다. 배지보다 실측을 우선한다. -->
 
-<div align="center">
+# 장병헌 (Byeongheon Jang) — AI 서비스 개발자
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,35:14342E,70:0E7A5F,100:00E5A0&height=210&section=header&text=Byeongheon%20Jang&fontSize=54&fontColor=F0FFF8&fontAlignY=42&animation=fadeIn&desc=AI%20Product%20Manager%20%C3%97%20Frontend%20Builder%20%C2%B7%20Founder%20in%20progress&descSize=17&descAlignY=72" width="100%" alt="Byeongheon Jang — AI Product Manager × Frontend Builder"/>
+AI 코딩 에이전트로 빠르게 구현하고, 재현 테스트와 실측으로 그 구현을 검증·보완하는 백엔드 중심 개발자입니다. 대표작 **Ops Sentinel**은 AI 응답 지연 3초를 주입한 동시 150건 부하에서 500 오류가 372건 나던 구조를, 커넥션 풀을 다시 기본값(10)으로 되돌린 채로 **성공 450/450**까지 고쳤습니다 — 아래 [대표작](#대표작)에 측정 조건을 그대로 적었습니다.
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3200&pause=1000&color=00E5A0&center=true&vCenter=true&width=680&lines=AI+Product+Manager+who+ships+the+frontend.;Philosophy+%E2%86%92+Problem+definition+%E2%86%92+React.+One+full+cycle.;11+projects+%C2%B7+7+hackathons+%C2%B7+3+awards+%E2%80%94+and+counting" alt="AI Product Manager who ships the frontend."/>
+[Portfolio](https://jang961111-hash.github.io) · [LinkedIn](https://www.linkedin.com/in/byeongheon-jang-ai-pm/) · [Email](mailto:jang961111@gmail.com)
 
-<br/>
-
-<a href="https://jang961111-hash.github.io"><img src="https://img.shields.io/badge/Portfolio-0E7A5F?style=for-the-badge&logo=githubpages&logoColor=white" alt="Portfolio"/></a>
-<a href="https://www.linkedin.com/in/byeongheon-jang-ai-pm/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-<a href="https://www.instagram.com/bh___journey/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
-<a href="mailto:jang961111@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-
-<br/><br/>
-
-**장병헌** · Seoul, South Korea
-
-**"AI를 기능이 아니라, 더 나은 결정을 돕는 레이어로 만듭니다."**
-<br/><sub>— AI as a layer for better decisions, not a gimmick.</sub>
-
-</div>
-
-<br/>
+---
 
 ## About
 
-I'm **Byeongheon Jang** — an AI Product Manager who ships his own frontend.
+전남대에서 철학을 공부하며 문제를 풀기 전에 구조부터 세우는 법을 배웠고, **SSAFY 14기**(삼성 청년 SW·AI 아카데미, 2025.07~2026.06 수료, SW·AI 교육 1,628시간)에서 그 구조를 직접 구현해 배포하는 법을 배웠습니다. 지금은 **SKALA 4기**(SK AI Leader Academy, 운영사 SK AX, 2026.07~ 재학)에서 백엔드·AI 엔지니어링 실력을 쌓고 있습니다.
 
-Philosophy taught me to structure a problem before solving it — I read Kant before *Attention Is All You Need*. **SSAFY 14th** (Samsung SW·AI Academy — 1,725 hours, completed 2026.06) taught me to ship what I structure. Now at **SKALA 4th** (SK AI Leader Academy, 2026.07–), I'm adding AI engineering depth on the road to founding my own company.
+문제 정의부터 배포까지 혼자 끝까지 가져가되, 완성 후에는 스스로를 의심합니다. 제출 당시의 수치 주장을 재측정해서 틀린 것은 틀렸다고 README에 다시 씁니다.
 
-I build with LLMs, recommendation, and search — owning the full loop: **problem definition → UX → React → ship → iterate**.
+---
 
-> Most PMs can't build; most builders don't do product.
-> **I'm betting a company on being both** — so ideas don't die in the handoff.
+## 대표작
 
-<br/>
+네 프로젝트 모두 코드는 Claude Code(AI 코딩 에이전트)가 짧은 세션 안에 작성했습니다. 아래 수치는 전부 제가 사후에 직접 설계·실행한 재현 테스트와 부하 측정 결과입니다.
 
-## At a Glance
+### [Ops Sentinel](https://github.com/jang961111-hash/ops-sentinel) — 지표 이상을 규칙엔진으로 판정하는 Spring Boot API
+가상 인프라 지표가 임계치를 넘으면 규칙엔진이 심각도·조치를 결정론적으로 정하고, 비관적 락으로 사건 중복 생성을 막고, 모든 판단을 AOP 감사로그로 남깁니다. 제출 당시 "커넥션 풀 30→60 증설로 해결"은 증상 완화였음을 재측정으로 확인했고, 락 안의 AI 호출과 트랜잭션 교착을 구조적으로 고친 뒤에는 **풀을 기본값 10으로 되돌려도 동시 150건에서 201 450/450 · 감사 450/450**(AI 응답 지연 3초 주입, 2026-09-28 재측정)입니다.
+`Java 21 · Spring Boot 3 · JPA/MyBatis · H2/PostgreSQL · OpenAI`
 
-<div align="center">
+### [장보고 (JangBogo)](https://github.com/jang961111-hash/jangbogo) — AI 에이전트용 결제 게이트웨이 (Solana devnet)
+AI 구매 에이전트가 결제하려 할 때, **가맹점 쪽 결정론 정책 엔진**이 위임장(예산·범위·만료)과 온체인 지불(devnet, SPL 토큰)을 검증한 뒤에만 주문을 확정합니다. 같은 결제 증빙을 동시에 여러 번 보내면 주문이 최대 10건 생기던 경합 결함을, 검증 전 선점 + 기록 직전 재검사로 고쳐 **1건**으로 만들었습니다(검증 지연 650ms 주입, 동시 K=1·2·5·10 × 5회, 2026-09-28 재측정).
+`Next.js · TypeScript · React · Solana devnet · Gemini`
 
-| Projects | Awards | Hackathons & Challenges | Training |
-|:---:|:---:|:---:|:---:|
-| **11** | **3** 🏆 | **7** | **SSAFY 14th → SKALA 4th** |
+### [RE:RUN](https://github.com/jang961111-hash/rerun-self-healing-workflow) — AI가 제안하고 사람이 승인해야 재실행되는 자가수정 워크플로
+데이터 계약(zod) 검증에 실패하면 실제 LLM(gpt-4.1-mini)이 원인과 수정 프롬프트를 제시하고, **사람이 diff를 승인해야만** 실패 단계부터 다시 실행됩니다. 진단 프롬프트에서 정답 방향 예시 3줄만 지웠더니 올바른 자가수정 성공률이 **72% → 0%**로 무너지는 것을 사전 등록한 실험으로 확인했습니다(조건당 n=25, Fisher 양측 p<0.0001, 2026-09-28). "AI가 스스로 고쳤다"는 원래 주장을 스스로 반증해 README 맨 앞에 그대로 공개했습니다.
+`Next.js · TypeScript · React · OpenAI`
 
-</div>
+### [skala-argus](https://github.com/jang961111-hash/skala-argus) — 반도체 설비 부품 교체 승인 워크플로 (개인 재구현)
+SKALA 5인 팀 미니프로젝트에서 발표·백엔드·팀 간 가교를 맡았고(팀 공식 산출물은 별도 Spring Boot 레포), 이 레포는 같은 기간에 FastAPI + Vue 3로 병렬로 만든 개인 백업 구현입니다. 요청번호 채번을 문자열로 비교해 **당일 1,000번째 이후 요청이 전부 500으로 실패**하던 결함(실측: 1,000번 이후 32건 중 32건)을 사후 재측정 중 발견해 고쳤습니다(750건 추가 등록 테스트로 재현·검증, 2026-09-28).
+`Python · FastAPI · Vue 3 · SQLAlchemy · SQLite/PostgreSQL`
 
-<br/>
+---
 
-## Featured Builds
+## 일하는 방식
 
-<table>
-<tr>
-<td width="50%" valign="top">
-<b>DailyLog</b> · <sub>PM · FRONTEND</sub><br/><br/>
-AI retrospective & decision-support service — the AI asks the first question about your day, killing the blank-page problem.<br/><br/>
-🏆 <b>SSAFY Excellence Award (3rd)</b><br/>
-<sub>SenseVoice · Thompson Sampling · pgvector · React</sub>
-</td>
-<td width="50%" valign="top">
-<b>SKYFLEET / SUPPORTY</b> · <sub>PLANNING · FRONTEND</sub><br/><br/>
-AI-copilot command console — one operator directs ground (UGV) & air (VTOL) assets by natural language. Built in 72h at D4D APAC Seoul.<br/><br/>
-🏆 <b>Oregon UAS Accelerator Award</b><br/>
-<sub>Defense Tech · AI Copilot · <a href="https://github.com/jang961111-hash/SKYFLEET-C2">Repo →</a></sub>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<b>EasyExam</b> · <sub>MARKETING · SEO</sub><br/><br/>
-AI SaaS for academies — question bank, exam generation & auto-grading in one loop. Idea to live service in 3 days.<br/><br/>
-🏆 <b>Best Team — SSAFY Startup Camp</b><br/>
-<sub>EdTech SaaS · AI Pipeline</sub>
-</td>
-<td width="50%" valign="top">
-<b>Loggy</b> · <sub>PLANNING · FE LEAD</sub><br/><br/>
-Decision-logging collaboration platform — GitHub's PR/Merge metaphor, ported to team decisions as a Git-graph tree.<br/><br/>
-<sub>WebSocket · Realtime UI · React · Product</sub>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<b>Promtree</b> · <sub>AI · PLANNING</sub><br/><br/>
-Marketplace that turns AI know-how into runnable, slot-based workflow products — creators' prompts stay protected, yet executable.<br/><br/>
-<sub>Next.js · FastAPI · Prompt Eng</sub>
-</td>
-<td width="50%" valign="top">
-<b>GenWing Live</b> · <sub>SOLO BUILD</sub><br/><br/>
-AI event-networking PWA — designed and shipped end-to-end alone during the Genspark Meetup Hackathon.<br/><br/>
-<sub>AI Agent · PWA · TypeScript · <a href="https://github.com/jang961111-hash/genwing-live">Repo →</a></sub>
-</td>
-</tr>
-</table>
+네 프로젝트 모두 같은 순서로 사후 보완했습니다.
 
-<sub>Also: MultiplierBoard (KRAFTON AI R&D) · Tamna-AI (Jeju AWS Space Challenge) · S.A.L.E.S CRM · Campus Chronicle (Shinhan × SSAFY) — full case studies on the <a href="https://jang961111-hash.github.io">portfolio</a>.</sub>
-<br/>
-<sub>More code: <a href="https://github.com/jang961111-hash/work_automation_pipeline">work_automation_pipeline</a> · <a href="https://github.com/jang961111-hash/carrot_market">carrot_market</a> · <a href="https://github.com/jang961111-hash/skala-front">skala-front</a></sub>
+1. **재현 테스트 먼저** — 결함을 고치기 전에 실패하는 테스트부터 커밋합니다.
+2. **수정** — 원인을 구조적으로 고칩니다(증상 완화와 구분).
+3. **독립 리뷰** — 작성한 세션과 분리된 리뷰(별도 에이전트)를 거칩니다. 리뷰가 수정이 만든 새 퇴행을 잡은 적도 있습니다(장보고 PR #1).
+4. **실측 전후 비교** — 같은 조건으로 수정 전/후 수치를 다시 재서 표로 남깁니다.
+5. **과장 정정** — 제출·발표 당시의 부풀린 주장을 찾으면 근거와 함께 README에 다시 씁니다.
 
-<br/>
+코드 대부분은 AI 에이전트가 짧은 세션 안에 씁니다. 제가 하는 일은 문제 범위와 설계 원칙을 정하고, 에이전트를 지시·검증하고, 그 결과가 사실인지 직접 실측해 보완하는 것입니다. 이 과정을 숨기지 않는 것이 강점이라고 생각합니다 — 각 레포 README의 "먼저 읽기" 섹션에 그대로 적어 두었습니다.
 
-## Stack
+---
 
-<table>
-<tr>
-<td><sub><b>LANGUAGES</b></sub></td>
-<td><img src="https://img.shields.io/badge/TypeScript-0E7A5F?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/> <img src="https://img.shields.io/badge/Python-0E7A5F?style=flat-square&logo=python&logoColor=white" alt="Python"/> <img src="https://img.shields.io/badge/Kotlin-0E7A5F?style=flat-square&logo=kotlin&logoColor=white" alt="Kotlin"/> <img src="https://img.shields.io/badge/SQL-0E7A5F?style=flat-square&logo=postgresql&logoColor=white" alt="SQL"/></td>
-</tr>
-<tr>
-<td><sub><b>BUILD</b></sub></td>
-<td><img src="https://img.shields.io/badge/React-0E7A5F?style=flat-square&logo=react&logoColor=white" alt="React"/> <img src="https://img.shields.io/badge/Next.js-0E7A5F?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js"/> <img src="https://img.shields.io/badge/FastAPI-0E7A5F?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI"/> <img src="https://img.shields.io/badge/Node.js-0E7A5F?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js"/></td>
-</tr>
-<tr>
-<td><sub><b>AI&nbsp;LAYER</b></sub></td>
-<td><img src="https://img.shields.io/badge/LLM_%2F_Prompt_Eng-00E5A0?style=flat-square&logo=openai&logoColor=0D1117" alt="LLM / Prompt Engineering"/> <img src="https://img.shields.io/badge/pgvector-00E5A0?style=flat-square&logo=postgresql&logoColor=0D1117" alt="pgvector"/> <img src="https://img.shields.io/badge/Thompson_Sampling-00E5A0?style=flat-square" alt="Thompson Sampling"/></td>
-</tr>
-<tr>
-<td><sub><b>SHIP</b></sub></td>
-<td><img src="https://img.shields.io/badge/AWS-0E7A5F?style=flat-square&logo=amazonwebservices&logoColor=white" alt="AWS"/> <img src="https://img.shields.io/badge/Vercel-0E7A5F?style=flat-square&logo=vercel&logoColor=white" alt="Vercel"/> <img src="https://img.shields.io/badge/Git-0E7A5F?style=flat-square&logo=git&logoColor=white" alt="Git"/> <img src="https://img.shields.io/badge/Figma-0E7A5F?style=flat-square&logo=figma&logoColor=white" alt="Figma"/></td>
-</tr>
-</table>
+## 스택
 
-<sub>Nothing decorative — every item above is load-bearing in a project above.</sub>
+대표작 4개에서 실제로 쓴 것만 적습니다.
 
-<br/>
+| 분류 | 스택 |
+|---|---|
+| Backend | Java 21 · Spring Boot 3 · FastAPI (Python) · Next.js API Routes |
+| Frontend | React 19 · Next.js 15/16 · Vue 3 + Vite |
+| Data | PostgreSQL · H2 · SQLite |
+| AI API | OpenAI (gpt-4o-mini, gpt-4.1-mini) · Google Gemini |
+| Blockchain | Solana devnet (SPL Token) |
+| Test / CI | JUnit5 + JaCoCo · pytest + coverage · vitest + Playwright · GitHub Actions |
+
+---
 
 ## Now
 
-- **Building** — SKALA 4th (SK AI Leader Academy), AI engineering track · in progress
-- **Sharpening** — AI product development · LLM-powered workflows · system design
-- **Trajectory** — Philosophy → SSAFY 14th → SKALA 4th → PM × Builder → Founder <sub>*창업을 향해, 매일 축적 중.*</sub>
-- **Open to** — product jams, collabs, and coffee chats → [Email](mailto:jang961111@gmail.com) · [LinkedIn](https://www.linkedin.com/in/byeongheon-jang-ai-pm/)
+- **SKALA 4기** AI 서비스 개발 트랙 진행 중
+- 대표작 4개의 사후 보완 PR을 머지하고, skala-argus의 실제 LLM(Claude) 판정 에이전트를 마저 구현하는 중입니다
+- 연락은 [Email](mailto:jang961111@gmail.com) · [LinkedIn](https://www.linkedin.com/in/byeongheon-jang-ai-pm/)로 주세요
 
 <br/>
 
-## GitHub Activity
-
 <div align="center">
-
-<img src="https://streak-stats.demolab.com?user=jang961111-hash&hide_border=true&background=0D1117&ring=00E5A0&fire=00E5A0&currStreakLabel=00E5A0&sideLabels=C9D1D9&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=8B949E" alt="contribution streak"/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=jang961111-hash&bg_color=0D1117&color=C9D1D9&line=00E5A0&point=FFFFFF&area=true&hide_border=true&custom_title=Commit%20Momentum" width="100%" alt="activity graph"/>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jang961111-hash/jang961111-hash/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/jang961111-hash/jang961111-hash/output/github-snake.svg" />
-  <img alt="contribution snake" src="https://raw.githubusercontent.com/jang961111-hash/jang961111-hash/output/github-snake.svg" />
-</picture>
-
-<br/><br/>
-
-<img src="https://komarev.com/ghpvc/?username=jang961111-hash&style=for-the-badge&color=00E5A0&label=PROFILE+VIEWS" alt="profile views"/>
-
-<br/><br/>
-
-Building something where AI helps people **decide**, not just generate? → [jang961111@gmail.com](mailto:jang961111@gmail.com)
-
-**Full case studies → [jang961111-hash.github.io](https://jang961111-hash.github.io)**
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00E5A0,50:0E7A5F,100:0D1117&height=120&section=footer" width="100%" alt=""/>
-
+<sub>전체 프로젝트는 <a href="https://jang961111-hash.github.io">포트폴리오</a>에 있습니다.</sub>
 </div>
