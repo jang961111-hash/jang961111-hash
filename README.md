@@ -1,163 +1,39 @@
-<!-- Byeongheon Jang (장병헌) · github.com/jang961111-hash -->
-<!-- Hi, source reader. The README is the product — ship > ornament. -->
+# 장병헌 (Byeongheon Jang)
 
-<div align="center">
+**AI를 서비스로 만드는 사람**
+AI service development and planning. I define the problem, set the evaluation criteria, and verify the result.
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,35:14342E,70:0E7A5F,100:00E5A0&height=210&section=header&text=Byeongheon%20Jang&fontSize=54&fontColor=F0FFF8&fontAlignY=42&animation=fadeIn&desc=AI%20Product%20Manager%20%C3%97%20Frontend%20Builder%20%C2%B7%20Founder%20in%20progress&descSize=17&descAlignY=72" width="100%" alt="Byeongheon Jang — AI Product Manager × Frontend Builder"/>
-
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3200&pause=1000&color=00E5A0&center=true&vCenter=true&width=680&lines=AI+Product+Manager+who+ships+the+frontend.;Philosophy+%E2%86%92+Problem+definition+%E2%86%92+React.+One+full+cycle.;11+projects+%C2%B7+7+hackathons+%C2%B7+3+awards+%E2%80%94+and+counting" alt="AI Product Manager who ships the frontend."/>
-
-<br/>
-
-<a href="https://jang961111-hash.github.io"><img src="https://img.shields.io/badge/Portfolio-0E7A5F?style=for-the-badge&logo=githubpages&logoColor=white" alt="Portfolio"/></a>
-<a href="https://www.linkedin.com/in/byeongheon-jang-ai-pm/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-<a href="https://www.instagram.com/bh___journey/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
-<a href="mailto:jang961111@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-
-<br/><br/>
-
-**장병헌** · Seoul, South Korea
-
-**"AI를 기능이 아니라, 더 나은 결정을 돕는 레이어로 만듭니다."**
-<br/><sub>— AI as a layer for better decisions, not a gimmick.</sub>
-
-</div>
-
-<br/>
-
-## About
-
-I'm **Byeongheon Jang** — an AI Product Manager who ships his own frontend.
-
-Philosophy taught me to structure a problem before solving it — I read Kant before *Attention Is All You Need*. **SSAFY 14th** (Samsung SW·AI Academy — 1,725 hours, completed 2026.06) taught me to ship what I structure. Now at **SKALA 4th** (SK AI Leader Academy, 2026.07–), I'm adding AI engineering depth on the road to founding my own company.
-
-I build with LLMs, recommendation, and search — owning the full loop: **problem definition → UX → React → ship → iterate**.
-
-> Most PMs can't build; most builders don't do product.
-> **I'm betting a company on being both** — so ideas don't die in the handoff.
-
-<br/>
-
-## At a Glance
-
-<div align="center">
-
-| Projects | Awards | Hackathons & Challenges | Training |
-|:---:|:---:|:---:|:---:|
-| **11** | **3** 🏆 | **7** | **SSAFY 14th → SKALA 4th** |
-
-</div>
-
-<br/>
-
-## Featured Builds
-
-<table>
-<tr>
-<td width="50%" valign="top">
-<b>DailyLog</b> · <sub>PM · FRONTEND</sub><br/><br/>
-AI retrospective & decision-support service — the AI asks the first question about your day, killing the blank-page problem.<br/><br/>
-🏆 <b>SSAFY Excellence Award (3rd)</b><br/>
-<sub>SenseVoice · Thompson Sampling · pgvector · React</sub>
-</td>
-<td width="50%" valign="top">
-<b>SKYFLEET / SUPPORTY</b> · <sub>PLANNING · FRONTEND</sub><br/><br/>
-AI-copilot command console — one operator directs ground (UGV) & air (VTOL) assets by natural language. Built in 72h at D4D APAC Seoul.<br/><br/>
-🏆 <b>Oregon UAS Accelerator Award</b><br/>
-<sub>Defense Tech · AI Copilot · <a href="https://github.com/jang961111-hash/SKYFLEET-C2">Repo →</a></sub>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<b>EasyExam</b> · <sub>MARKETING · SEO</sub><br/><br/>
-AI SaaS for academies — question bank, exam generation & auto-grading in one loop. Idea to live service in 3 days.<br/><br/>
-🏆 <b>Best Team — SSAFY Startup Camp</b><br/>
-<sub>EdTech SaaS · AI Pipeline</sub>
-</td>
-<td width="50%" valign="top">
-<b>Loggy</b> · <sub>PLANNING · FE LEAD</sub><br/><br/>
-Decision-logging collaboration platform — GitHub's PR/Merge metaphor, ported to team decisions as a Git-graph tree.<br/><br/>
-<sub>WebSocket · Realtime UI · React · Product</sub>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<b>Promtree</b> · <sub>AI · PLANNING</sub><br/><br/>
-Marketplace that turns AI know-how into runnable, slot-based workflow products — creators' prompts stay protected, yet executable.<br/><br/>
-<sub>Next.js · FastAPI · Prompt Eng</sub>
-</td>
-<td width="50%" valign="top">
-<b>GenWing Live</b> · <sub>SOLO BUILD</sub><br/><br/>
-AI event-networking PWA — designed and shipped end-to-end alone during the Genspark Meetup Hackathon.<br/><br/>
-<sub>AI Agent · PWA · TypeScript · <a href="https://github.com/jang961111-hash/genwing-live">Repo →</a></sub>
-</td>
-</tr>
-</table>
-
-<sub>Also: MultiplierBoard (KRAFTON AI R&D) · Tamna-AI (Jeju AWS Space Challenge) · S.A.L.E.S CRM · Campus Chronicle (Shinhan × SSAFY) — full case studies on the <a href="https://jang961111-hash.github.io">portfolio</a>.</sub>
-<br/>
-<sub>More code: <a href="https://github.com/jang961111-hash/work_automation_pipeline">work_automation_pipeline</a> · <a href="https://github.com/jang961111-hash/carrot_market">carrot_market</a> · <a href="https://github.com/jang961111-hash/skala-front">skala-front</a></sub>
-
-<br/>
-
-## Stack
-
-<table>
-<tr>
-<td><sub><b>LANGUAGES</b></sub></td>
-<td><img src="https://img.shields.io/badge/TypeScript-0E7A5F?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/> <img src="https://img.shields.io/badge/Python-0E7A5F?style=flat-square&logo=python&logoColor=white" alt="Python"/> <img src="https://img.shields.io/badge/Kotlin-0E7A5F?style=flat-square&logo=kotlin&logoColor=white" alt="Kotlin"/> <img src="https://img.shields.io/badge/SQL-0E7A5F?style=flat-square&logo=postgresql&logoColor=white" alt="SQL"/></td>
-</tr>
-<tr>
-<td><sub><b>BUILD</b></sub></td>
-<td><img src="https://img.shields.io/badge/React-0E7A5F?style=flat-square&logo=react&logoColor=white" alt="React"/> <img src="https://img.shields.io/badge/Next.js-0E7A5F?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js"/> <img src="https://img.shields.io/badge/FastAPI-0E7A5F?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI"/> <img src="https://img.shields.io/badge/Node.js-0E7A5F?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js"/></td>
-</tr>
-<tr>
-<td><sub><b>AI&nbsp;LAYER</b></sub></td>
-<td><img src="https://img.shields.io/badge/LLM_%2F_Prompt_Eng-00E5A0?style=flat-square&logo=openai&logoColor=0D1117" alt="LLM / Prompt Engineering"/> <img src="https://img.shields.io/badge/pgvector-00E5A0?style=flat-square&logo=postgresql&logoColor=0D1117" alt="pgvector"/> <img src="https://img.shields.io/badge/Thompson_Sampling-00E5A0?style=flat-square" alt="Thompson Sampling"/></td>
-</tr>
-<tr>
-<td><sub><b>SHIP</b></sub></td>
-<td><img src="https://img.shields.io/badge/AWS-0E7A5F?style=flat-square&logo=amazonwebservices&logoColor=white" alt="AWS"/> <img src="https://img.shields.io/badge/Vercel-0E7A5F?style=flat-square&logo=vercel&logoColor=white" alt="Vercel"/> <img src="https://img.shields.io/badge/Git-0E7A5F?style=flat-square&logo=git&logoColor=white" alt="Git"/> <img src="https://img.shields.io/badge/Figma-0E7A5F?style=flat-square&logo=figma&logoColor=white" alt="Figma"/></td>
-</tr>
-</table>
-
-<sub>Nothing decorative — every item above is load-bearing in a project above.</sub>
-
-<br/>
+[Portfolio](https://jang961111-hash.github.io) | [LinkedIn](https://www.linkedin.com/in/byeongheon-jang-ai-pm/) | [Email](mailto:jang961111@gmail.com)
 
 ## Now
 
-- **Building** — SKALA 4th (SK AI Leader Academy), AI engineering track · in progress
-- **Sharpening** — AI product development · LLM-powered workflows · system design
-- **Trajectory** — Philosophy → SSAFY 14th → SKALA 4th → PM × Builder → Founder <sub>*창업을 향해, 매일 축적 중.*</sub>
-- **Open to** — product jams, collabs, and coffee chats → [Email](mailto:jang961111@gmail.com) · [LinkedIn](https://www.linkedin.com/in/byeongheon-jang-ai-pm/)
+- SKALA 4기 (SK AI Leader Academy), 2026.07 - 2026.12 (예정)
+- 안심이음: 어르신이 사기 문자를 스스로 알아보도록 돕는 연습 서비스, [ansimieum.kr](https://ansimieum.kr) 운영, 어르신 20명 현장 실증 (2026.11)
 
-<br/>
+## Selected work
 
-## GitHub Activity
+| Project | What I did | Result |
+|---|---|---|
+| [안심이음](https://jang961111-hash.github.io/projects/ansim-ieum/) | 규칙이 먼저 판별하고 AI는 마지막에 보태는 구조 설계, 검증셋과 측정 기준 운영 | 규칙+AI 정확도 96.0%, 미탐 0.0% (검증셋 200건, 내부 측정) |
+| [SKT 「모두의 Promp.T」](https://jang961111-hash.github.io/projects/skt-prompt-ansimcall/) | "판별해줘"가 아니라 "판별해주지 마"로 뒤집은 훈련 코치 프롬프트 | Life AX 부문 최우수상 (개인) |
+| [DailyLog](https://jang961111-hash.github.io/projects/dailylog/) | PM, 문제 정의와 기능 우선순위 기준 수립 | SSAFY 14기 특화프로젝트, 광주1반 3등 (8개 팀) |
+| [장애 대응 에이전트 Ablation](https://github.com/jang961111-hash/incident-agent-ablation) | 개선을 하나씩 켜고 끄는 7개 구성 비교, 평가 설계 | 필수 매뉴얼 누락 56% → 9% (holdout) |
+| [ARGUS](https://jang961111-hash.github.io/projects/argus/) | 근거는 에이전트가 만들고 승인은 사람이 하는 워크플로 설계 | SKALA 4기 미니 프로젝트 |
 
-<div align="center">
+전체 21개 프로젝트는 [포트폴리오](https://jang961111-hash.github.io)에 있습니다.
 
-<img src="https://streak-stats.demolab.com?user=jang961111-hash&hide_border=true&background=0D1117&ring=00E5A0&fire=00E5A0&currStreakLabel=00E5A0&sideLabels=C9D1D9&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=8B949E" alt="contribution streak"/>
+## How I work
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=jang961111-hash&bg_color=0D1117&color=C9D1D9&line=00E5A0&point=FFFFFF&area=true&hide_border=true&custom_title=Commit%20Momentum" width="100%" alt="activity graph"/>
+1. 재지 않은 것은 말하지 않는다
+2. 틀린 것은 지우지 않고 고쳐 적는다
+3. 의견이 갈리면 기준부터 세운다
+4. 답을 주기보다 스스로 판단하게 만든다
+5. 전부 기록한다
+6. 현장에서 본 불편을 문제로 정의한다
+7. 떨어지면 다시 준비해서 간다
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jang961111-hash/jang961111-hash/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/jang961111-hash/jang961111-hash/output/github-snake.svg" />
-  <img alt="contribution snake" src="https://raw.githubusercontent.com/jang961111-hash/jang961111-hash/output/github-snake.svg" />
-</picture>
+## Background
 
-<br/><br/>
-
-<img src="https://komarev.com/ghpvc/?username=jang961111-hash&style=for-the-badge&color=00E5A0&label=PROFILE+VIEWS" alt="profile views"/>
-
-<br/><br/>
-
-Building something where AI helps people **decide**, not just generate? → [jang961111@gmail.com](mailto:jang961111@gmail.com)
-
-**Full case studies → [jang961111-hash.github.io](https://jang961111-hash.github.io)**
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00E5A0,50:0E7A5F,100:0D1117&height=120&section=footer" width="100%" alt=""/>
-
-</div>
+- 삼성청년SW·AI아카데미(SSAFY) 14기, 1,628시간, 2026.06 수료
+- 전남대학교 철학과 졸업
+- 대한민국 해병대 병장 만기 전역
