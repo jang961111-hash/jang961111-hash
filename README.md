@@ -8,17 +8,21 @@ AI service development and planning. I define the problem, set the evaluation cr
 ## Now
 
 - SKALA 4기 (SK AI Leader Academy), 2026.07 - 2026.12 (예정)
-- 안심이음: 어르신이 사기 문자를 스스로 알아보도록 돕는 연습 서비스, [ansimieum.kr](https://ansimieum.kr) 운영, 어르신 20명 현장 실증 (2026.11)
+- 안심이음: 어르신이 사기 문자와 전화를 미리 연습해 보는 서비스(국립광주과학관 2026 마이AI랩 선정 개인 과제), [ansimieum.kr](https://ansimieum.kr) 운영, 어르신 20명 1회 현장 실증 (2026.11.13)
+
+![안심이음 화면](https://jang961111-hash.github.io/projects/ansim-ieum/card-screens.webp)
+
+안심이음 시작, 훈련 소개, 그림 연습 고르기 화면.
 
 ## Selected work
 
 | Project | What I did | Result |
 |---|---|---|
-| [안심이음](https://jang961111-hash.github.io/projects/ansim-ieum/) | 규칙이 먼저 판별하고 AI는 마지막에 보태는 구조 설계, 검증셋과 측정 기준 운영 | 규칙+AI 정확도 96.0%, 미탐 0.0% (검증셋 200건, 내부 측정) |
-| [SKT 「모두의 Promp.T」](https://jang961111-hash.github.io/projects/skt-prompt-ansimcall/) | "판별해줘"가 아니라 "판별해주지 마"로 뒤집은 훈련 코치 프롬프트 | Life AX 부문 최우수상 (개인) |
-| [DailyLog](https://jang961111-hash.github.io/projects/dailylog/) | PM, 문제 정의와 기능 우선순위 기준 수립 | SSAFY 14기 특화프로젝트, 광주1반 3등 (8개 팀) |
-| [장애 대응 에이전트 Ablation](https://github.com/jang961111-hash/incident-agent-ablation) | 개선을 하나씩 켜고 끄는 7개 구성 비교, 평가 설계 | 필수 매뉴얼 누락 56% → 9% (holdout) |
-| [ARGUS](https://jang961111-hash.github.io/projects/argus/) | 근거는 에이전트가 만들고 승인은 사람이 하는 워크플로 설계 | SKALA 4기 미니 프로젝트 |
+| [안심이음](https://jang961111-hash.github.io/projects/ansim-ieum/) | 개인 과제. 기획, 판별 기준과 검증 절차 설계, 실증 진행. 규칙이 먼저 판별하고 AI는 위험 등급 상향만 가능한 구조 | 검증셋 200건에서 사기 문자 100건 중 놓친 것 0건(정확도 96.0%), 정상 문자 8.0%에 '조심' 경고 (2026.11.16 내부 측정, 정답 표시 1인, 일부 문장은 규칙 수정 때 본 적 있음). 어르신 20명 현장 실증 1회 |
+| [DailyLog](https://jang961111-hash.github.io/projects/dailylog/) | PM, 프론트엔드. 문제 정의, 사용자 여정 설계, 기능 우선순위 조율, 화면 구현, 발표 | SSAFY 14기 특화프로젝트 발표회 광주1반 3등 (8개 팀) |
+| [SKT 「모두의 Promp.T」](https://jang961111-hash.github.io/projects/skt-prompt-ansimcall/) | 개인 출품. 문제 정의, 서비스 기획. 판별해 주는 AI 대신 판별해주지 않는 훈련 코치 프롬프트 | Life AX 부문 최우수상 (2026.08.20) |
+| [장애 대응 에이전트 Ablation](https://github.com/jang961111-hash/incident-agent-ablation) | 개인 과제. 개선을 하나씩 켜고 끄는 7개 구성 비교, 평가 설계, 실험 실행, 결과 분석 | 정답 매뉴얼이 있는 holdout 질문에서 필수 매뉴얼 누락 56%에서 9%로 감소 (다른 AI가 쓴 외부 문항 15개에서는 누락 58%) |
+| [ARGUS](https://jang961111-hash.github.io/projects/argus/) | 5인 팀. 백엔드 설계, 최종 발표. 근거는 에이전트가 만들고 승인은 사람이 하는 워크플로 | SKALA 4기 미니 프로젝트(3일). 화면과 수치는 개인 저장소 기준이고 팀 공식 구현은 Java와 Spring Boot |
 
 전체 21개 프로젝트는 [포트폴리오](https://jang961111-hash.github.io)에 있습니다.
 
